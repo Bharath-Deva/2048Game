@@ -26,7 +26,6 @@ const isGameOver = (grid) => {
   return true;
 };
 
-// const fillSpots = (grid) => {
 export const fillSpots = (grid) => {
   let spot;
   try {
@@ -42,11 +41,6 @@ export const fillSpots = (grid) => {
     spot = generateRandomElementInArray(emptySpots);
     let spotNumber = generateRandomElementInArray(fillOptions);
     grid[spot[0]][spot[1]] = spotNumber;
-    if (fillOptions.length > 1) {
-      spot = generateRandomElementInArray(emptySpots);
-      spotNumber = generateRandomElementInArray(fillOptions);
-      grid[spot[0]][spot[1]] = spotNumber;
-    }
     return grid;
   } catch (error) {
     console.log(error);
