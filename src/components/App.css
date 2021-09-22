@@ -9,8 +9,10 @@
 
 .block {
   border: 1px solid black;
-  height: 100px;
-  width: 100px;
+  min-height: 80px;
+  min-width: 80px;
+  max-height: 90px;
+  max-width: 90px;
 }
 
 .blockElement {
