@@ -111,6 +111,7 @@ export default class App extends Component {
       [0, 0, 0, 0],
       [0, 0, 0, 0],
     ])
+    tempGrid = fillSpots(tempGrid)
     if (this.state.score > this.state.bestScore) {
       tempScore = this.state.score;
       localStorage.setItem('bestScore', tempScore)
