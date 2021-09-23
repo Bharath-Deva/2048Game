@@ -2,7 +2,7 @@ import React from "react";
 
 const Table = ({ grid }) => {
   const styleForBlocks = {
-    "0": '#ffffff',
+    "0": 'aliceblue',
     "2": "#eee4da",
     "4": "#eee1c9",
     "8": '#f3b27a',
